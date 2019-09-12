@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "flashcardproject-252516",
+  "private_key_id": "120429ad768d76d9f3af33916661e6cbe93cbab9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0qnNV/pCo2Zkt\nrX2b203NTeykGpbpiSB49IZc15Bnd+RZmDOXO6MPg3A3fQ/zJuiDYfHqWL9QgU2i\nBeSkodTF1ES+Xz/crRu921De2GzBESCcZc4nykaeZn4Uh5kt7vkTfkbpaqQv/bbt\nxsbRM6V8R85xVT6p7refAzAhXMwzX5LnvZBIPkGa55WbxwXqN5nyAnG6J2PrdsKv\nDvw4z9BvwShc+YULa9wYuviL5Ohc+HblXfzlm9AFCandmGa81vNo8fkyF8o0sN4h\nh2IZqutEJuT6lJkM1iWMHcdflnLpcJeWHUsbDK2Te0BDfGM3hw/ni1lFoGQF6fb/\n6oZSrbp1AgMBAAECggEAFuBgc1qlIaRQB58owRP/YYhE9zCgvFiPQpGf8+Cd2eQu\nB4REwBkemCfKDVSqMN1T4tMDqWtsajq9RE9fuNL/GL+8pqhz8zL+SMedEWKxPq83\nBGbFuHceAw+yVlInPNA+PNAoFYVZ3fPP9oLNiQ7znO2Qv/wNz8G5AYsLTKYt+zEf\nsrZ4OMJFFWLxBG91nOkjedhO4D6toEPtivUveNcYJ27DgrxmyZNJrtkHALaZ4fxn\neMz5CENxzl/vKPXgFUxsPl2zhAiJSNCwEMBL+w/YkjnPAVnS1HyPzrF+RsSoJ/D+\nczAn9LSmqo4oB9wIy8pTaSB/q4laoDLLmFMBb5/xHwKBgQDtjKA0qVjW/d3s05Cw\nORJYMgogvIYMfRX+hwGPcX86k+lWN+xABUoY6EQz/a0jPKPPCrejYfLfr9V4HXCK\nd6ecq58ZxU7Nib2npe05RegVl0MqNRlgCRmYvogwAk7+QsX6bDFkNeM8XWRcCkIe\nNN1NZI4yDF2KdXM661N0+Ju2QwKBgQDCssRMiz7iHhAMSgZ8jNwCbtQXx5yv9Dbo\n/l5UFUyDdN8uGv9u4v4byIb/u1i+nU5s7SFJsmmG0c+QYgzGEa6yiX/K309qudnX\n3viM1BMtOPKPkAKNLSeSRVialHxBiANub/nnJW6vyDINJOldCB6f9lnwDJtF+zgS\nSLy1/Rhs5wKBgHcbN4iwEJdbmtaQDdAODaCjFmjrndrNLSX90050/fIFD83nJFHF\nVS2/59KZsyIj2Y6KNSF6jyiRJVughzkmXag0dQWa5LQyCCHzFErPPlr1CPw0u5Bn\nf6oSfn5z6d+a42F4thsk2db+jL+JdTVoFD4l2RZHFO/DjA9SxvmzXX+5AoGAay/f\nwgQm6nWCgEGAsLEbrns1aKIMMRJR6JOhesj/BqAg/lD+rx1oqAMNz1xkzwvrUSx7\nVwdR8Vcw3lwcjC7P7pqkMBwgrLEErUOjsmRO6mafo0m1HePuFSj4TqHQhoNK4FHl\nUsvY1A1zAKmBkCYYNhh6Cx3lnfFgPTCuM8LS36ECgYEAxEGfB0f9Zw06W7ut5VPx\nPtI5MpsMqMZO9BsPj/dx+8gKBJaraxN0Z+w4jixqu6WJ5i1IIVYfYFbmC8f3UJUP\nsga0rLNOo5H6TVF19bZ+QCi/3kBlkQw9zqPmi7Re974i6AH89wSpfBP538ssthqv\n6BT3cS4LzL/tS45SZaIUgWU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "flashcardsaccount@flashcardproject-252516.iam.gserviceaccount.com",
+  "client_id": "103338416765418160158",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/flashcardsaccount%40flashcardproject-252516.iam.gserviceaccount.com"
+}
