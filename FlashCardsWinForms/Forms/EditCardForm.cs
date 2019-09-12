@@ -1,5 +1,6 @@
 ﻿using FlashCardsWinForms.Presenters;
 using FlashCardsWinForms.Views;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace FlashCardsWinForms.Forms
 {
-    public partial class EditCardForm : Form, IEditCardFormView
+    public partial class EditCardForm : MaterialForm, IEditCardFormView
     {
         private EditCardFormPresenter EditCardFormPresenter { get; set; }
         private string DeckName { get; set; }
@@ -33,12 +34,11 @@ namespace FlashCardsWinForms.Forms
             EditCardFormPresenter.PopulateForm(Question, Answer);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             EditCardFormPresenter.UpdateEditedCard(DeckName, Question, Answer, richTextBox1.Text, richTextBox2.Text);
             Close();
         }
-
 
         //IEditCardFormView
         public void PopulateForm(string question, string answer)

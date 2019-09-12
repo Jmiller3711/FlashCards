@@ -3,11 +3,15 @@ using System;
 using FlashCardsWinForms.Views;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
+using System.Drawing;
 
 namespace FlashCardsWinForms
 {
     public partial class FlashCardForm : MaterialForm, IFlashCardFormView
     {
+        //PROJECT TODO:
+        //Regex user input, or format google sheets to allow special characters
+
         private FlashCardFormPresenter FlashCardFormPresenter { get; set; }
         public string CurrentDeck { get; set; }
 

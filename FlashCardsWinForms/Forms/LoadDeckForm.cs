@@ -1,12 +1,13 @@
 ﻿using FlashCardsWinForms.Presenters;
 using FlashCardsWinForms.Views;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace FlashCardsWinForms
 {
-    public partial class LoadDeckForm : Form, ILoadDeckFormView
+    public partial class LoadDeckForm : MaterialForm, ILoadDeckFormView
     {
         private LoadDeckFormPresenter LoadDeckFormPresenter { get; set; }
         public string DeckToLoad { get; set; }
@@ -23,11 +24,10 @@ namespace FlashCardsWinForms
             LoadDeckFormPresenter.PresentComboBox();
         }
 
-        private void button1_Click(object sender, EventArgs e) //load
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             DeckToLoad = comboBox1.Text;
             Close();
-            //TODO if user presses red X then DeckToLoad can be null
         }
 
         //ILoadDeckFormView
