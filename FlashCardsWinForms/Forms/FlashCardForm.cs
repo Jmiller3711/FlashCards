@@ -2,16 +2,12 @@
 using System;
 using FlashCardsWinForms.Views;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace FlashCardsWinForms
 {
-    public partial class FlashCardForm : Form, IFlashCardFormView
+    public partial class FlashCardForm : MaterialForm, IFlashCardFormView
     {
-        //PROJECT TODO LIST:
-        //Max/Min Form Dimensions
-        //Color Coding?
-        //Upload to GitHub Account
-
         private FlashCardFormPresenter FlashCardFormPresenter { get; set; }
         public string CurrentDeck { get; set; }
 
@@ -68,17 +64,17 @@ namespace FlashCardsWinForms
             FlashCardFormPresenter.GetPreviousCard(CurrentDeck, richTextBox1.Text, richTextBox2.Text);
         }
 
-        private void button3_Click_1(object sender, EventArgs e) //SHOW ANSWER
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             FlashCardFormPresenter.RevealAnswer(CurrentDeck);
         }
 
-        private void button2_Click(object sender, EventArgs e) //<
+        private void materialRaisedButton2_Click(object sender, EventArgs e)  //<
         {
             FlashCardFormPresenter.GetPreviousCard(CurrentDeck, richTextBox1.Text, richTextBox2.Text);
         }
 
-        private void button1_Click(object sender, EventArgs e) //>
+        private void materialRaisedButton1_Click(object sender, EventArgs e) //>
         {
             FlashCardFormPresenter.GetNextCard(CurrentDeck, richTextBox1.Text, richTextBox2.Text);
         }
@@ -87,24 +83,24 @@ namespace FlashCardsWinForms
         {
             if (e.KeyCode == Keys.Right)
             {
-                button1_Click(sender, new EventArgs());
+                materialRaisedButton1_Click(sender, new EventArgs());
             }
             if (e.KeyCode == Keys.Left)
             {
-                button2_Click(sender, new EventArgs());
+                materialRaisedButton2_Click(sender, new EventArgs());
             }
             if (e.KeyCode == Keys.Down)
             {
                 e.Handled = true;
                 e.SuppressKeyPress = true;
-                button3_Click_1(sender, new EventArgs());
+                materialRaisedButton3_Click(sender, new EventArgs());
             }
         }
 
         //IFlashCardFormView
         public void UpdateDeckLabel(string deckName)
         {
-            label1.Text = deckName;
+            label1.Text = "Deck: " + deckName;
         }
 
         public void ShowCard(string question, string answer)
@@ -116,11 +112,13 @@ namespace FlashCardsWinForms
         public void RevealAnswer()
         {
             richTextBox2.Visible = true;
+            materialDivider1.Visible = false;
         }
 
         public void HideAnswer()
         {
             richTextBox2.Visible = false;
+            materialDivider1.Visible = true;
         }
 
         public void AlertUser(string message)
@@ -130,7 +128,7 @@ namespace FlashCardsWinForms
 
         public void Reset()
         {
-            label1.Text = "No Deck Loaded";
+            label1.Text = "Deck: No Deck Loaded";
             richTextBox1.Text = "";
             richTextBox2.Text = "";
             CurrentDeck = null;
